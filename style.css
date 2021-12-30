@@ -1,0 +1,120 @@
+body { 
+  margin: 0;
+  /*
+  background-color: lightgray;
+  background-image: url(img/logo_masterchannel.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: 200px; */
+  background: lightgray url(img/logo_masterchannel.png) no-repeat fixed left;
+  background-size: 200px;
+}
+
+/* header */
+header {
+  background: gray;
+  justify-content: flex-start;
+  width: 100%;
+}
+.inicio {
+  align-items: center;
+  flex-grow: 1;
+}
+#logo {
+  width: 100px;
+  margin: 25px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100px;
+  flex-grow: 9;
+}
+.nav {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.nav:hover {
+  background: black;
+}
+/* main */
+main {
+  width: 100%;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.card {
+  width: 250px;
+  margin: 10px;
+  background: blueviolet;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: default;
+}
+.card > h2 { text-align: center; }
+.card:hover { background: cyan; }
+
+/* User Form */
+input {
+  padding: 8px;
+  width: 100px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background: gray;
+  border: 2px gray solid;
+  border-radius: 5px;
+  outline: none;
+}
+input:focus {
+  border-color: darkred;
+}
+input[type="radio"] {
+  width: initial;
+}
+input[type="submit"] {
+  background: purple;
+  border: 2px purple solid;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+input[type="submit"]:hover {
+  background: transparent;
+  color: purple;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.just {
+  display: flex;
+  justify-content: center; 
+}
+
+
+
+/* #imagenInicio { width: 500px; } */
+#logohp { width: 100px; }
+#logocisco { width: 100px; }
+
+

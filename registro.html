@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="row center">
+   <div class="inicio">
+     <a href="index.html"><img id="logo" src="img/logo_masterchannel.png" alt="Logo Masterchannel"></a>
+   </div>
+   <div class="navbar">
+      <a href="registro.html" class="nav">Registro</a>
+      <a href="Tarifas.html" class="nav">Tarifas</a>
+      <a href="Proveedores.html" class="nav">Proveedores</a>
+      <a href="Tecnicos.html" class="nav">T&eacute;cnicos</a>
+      <a href="Pago.html" class="nav">Pago</a>
+   </div>
+  </header>
+  <main>
+    <div>
+      <h1>Registro</h1>
+      <h3>Favor de llenar el siguiente formulario siendo lo mas sincero posible ya que con esta informaci&oacute;n se registrara en nuestra plataforma. 
+      <h3/></div>
+    <form id="formUser" class="row center" action="">
+      <div class="col">
+        <label for="name">Nombre</label>
+        <input id="name" type="text" required>
+        <label for="yOld">Edad</label>
+        <input id="yOld" type="number" min="18" required>
+        <label>Sexo</label>
+        <div class="col">
+          <div>
+            <input id="m" type="radio" name="sex">
+            <label for="m">Masculino</label>
+          </div>
+          <div>
+            <input id="f" type="radio" name="sex">
+            <label for="f">Femenino</label>
+          </div>
+         <div>
+           <input id="i" type="radio" name="sex" >
+            <label for="i">Indistinto</label>
+         </div>
+        </div>
+        <label for="dom">Domicilio</label>
+        <textarea id="" cols="30" rows="10" placeholder="MM/DD/YYYY" required></textarea>
+        <label for="eFed" >Entidad Federativa</label>
+        <input id="eFed" type="text" required>
+        <label for="email">Correo</label>
+        <input id="email" type="text" required>
+     </div>
+     <div class="col">
+       <label for="phone">Telefono</label>
+        <input id="phone" type="tel" title="debe de iniciar con 55 o 56" required>
+        <label for="rfc">RFC</label>
+        <input id="rfc" type="text" required>
+        <label for="ref">Referencias</label>
+        <input id="ref" type="text" required>
+        <label for="curp">CURP</label>
+        <input id="curp" type="text" maxlength="18" required>
+        <label for="user">Usuario</label>
+        <input id="user" type="text" required>
+        <label for="pw">Contraseña</label>
+        <input id="pw" type="password" required>
+     </div>
+     <input type="submit" value="Enviar">
+    </form>
+  </main>
+  
+</body>
+</html>
